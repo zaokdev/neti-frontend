@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "id": 101,
+      "name": "Carlos Dev",
+      "username": "carlitos_dev",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    "content": "¿Cuál es su editor de código favorito? Yo uso VS Code. 🔥",
+    "image": "https://source.unsplash.com/800x600/?code",
+    "likes": 120,
+    "comments": [
+      {
+        "id": 201,
+        "user": "marianajs",
+        "content": "Yo también, pero últimamente estoy probando WebStorm. 😃"
+      },
+      {
+        "id": 202,
+        "user": "pedrobackend",
+        "content": "Nano es el verdadero GOAT. 😂"
+      }
+    ],
+    "createdAt": "2025-02-18T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "user": {
+      "id": 102,
+      "name": "Mariana JS",
+      "username": "marianajs",
+      "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    "content": "Hoy aprendí algo nuevo sobre promesas en JavaScript. ¡Es increíble cómo funciona async/await! 🚀",
+    "image": null,
+    "likes": 200,
+    "comments": [
+      {
+        "id": 203,
+        "user": "carlitos_dev",
+        "content": "Sí, pero a veces es un dolor manejar errores con try/catch. 😅"
+      },
+      {
+        "id": 204,
+        "user": "elena_ui",
+        "content": "Te recomiendo usar async/await con .catch() en lugar de try/catch. 😉"
+      }
+    ],
+    "createdAt": "2025-02-17T12:30:00Z"
+  },
+  {
+    "id": 3,
+    "user": {
+      "id": 103,
+      "name": "Pedro Backend",
+      "username": "pedrobackend",
+      "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    "content": "Aquí les dejo una guía rápida sobre Docker para devs backend 🐳",
+    "image": "https://source.unsplash.com/800x600/?docker",
+    "likes": 95,
+    "comments": [
+      {
+        "id": 205,
+        "user": "juan_devops",
+        "content": "Buenísimo, Docker es clave para evitar el clásico 'En mi máquina sí funciona'. 😆"
+      }
+    ],
+    "createdAt": "2025-02-16T18:45:00Z"
+  }
+]

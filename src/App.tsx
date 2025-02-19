@@ -3,6 +3,7 @@ import "./App.css";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import MainLayout from "./pages/layouts/MainLayout";
+import MainHomePage from "./pages/MainHomePage";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route path="/auth/signup" element={<SignUp />} />
           <Route path="/auth/signin" element={<SignIn />} />
           <Route path="/" element={<MainLayout />}>
-          
+            <Route index element={<MainHomePage />} />
           </Route>
         </Routes>
       </BrowserRouter>

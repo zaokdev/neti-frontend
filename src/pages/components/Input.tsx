@@ -15,7 +15,7 @@ const Input: React.FC<Props> = ({ type, id, name, className, placeholder }) => {
       id={id}
       name={name}
       className={
-        "w-full px-4 py-2 mt-2 bg-zinc-800 rounded-lg outline-none " + className
+        "w-full px-4 py-2 mt-2 bg-zinc-700 rounded-lg outline-none " + className
       }
       placeholder={placeholder}
       required
