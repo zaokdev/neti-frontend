@@ -7,7 +7,7 @@ const SignIn = () => {
   return (
     <section className="text-white h-screen flex flex-col">
       <NavBar />
-      <section className="md:grid md:grid-cols-12 md:gap-16 bg-zinc-900 md:py-8 md:px-12 flex-1">
+      <section className="md:grid md:grid-cols-12 md:gap-16 bg-zinc-900 md:py-8 md:px-12 flex-155">
         <div className="md:col-span-7 bg-zinc-800 rounded-xl hidden md:block"></div>
         <div className="md:col-span-5">
           {/* EMPIEZA EL FORMULARIO */}
