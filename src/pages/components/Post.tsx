@@ -9,6 +9,7 @@ interface PostProps {
 }
 
 const Post: React.FC<PostProps> = ({ post }) => {
+  
   const [yourLike, setYourLike] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();

@@ -6,31 +6,32 @@ const MainLayout = () => {
   return (
     <main className="flex flex-col text-white min-h-screen max-h-fit">
       <NavBar />
+      {/* la sidebar uwu */}
       <section className="bg-zinc-900 flex-1 md:grid-cols-12 md:grid xl:px-32">
-        <div className="hidden bg-zinc-800 col-span-2 md:flex md:justify-start">
-          <ul className="mt-4 flex-1 flex flex-col gap-2">
-            <li>
+        <div className="fixed w-full md:w-auto md:relative bg-zinc-800 col-span-2 md:flex md:justify-start bottom-0">
+          <ul className="mt-4 flex-1 flex md:flex-col gap-2 md:px-2 h12">
+            <li className="flex-1 md:flex-none">
               <Link
                 to={"/"}
-                className="bor flex gap-2 hover:bg-zinc-700 px-4 py-2 rounded-4xl"
+                className="flex gap-2 hover:bg-zinc-700 px-4 py-2 md:rounded-4xl justify-center md:justify-start"
               >
-                <HomeIcon className="shrink-0" /> Home
+                <HomeIcon className="shrink-0" /> <p className="hidden md:block">Home</p>
               </Link>
             </li>
-            <li>
+            <li className="flex-1 md:flex-none">
               <Link
                 to={"jobs"}
-                className="flex gap-2 hover:bg-zinc-700 px-4 py-2 rounded-4xl"
+                className="flex gap-2 hover:bg-zinc-700 px-4 py-2 md:rounded-4xl justify-center md:justify-start"
               >
-                <Briefcase /> Jobs
+                <Briefcase /> <p className="hidden md:block">Jobs</p>
               </Link>
             </li>
-            <li>
+            <li className="flex-1 md:flex-none">
               <Link
                 to={"messages"}
-                className="flex gap-2 hover:bg-zinc-700 px-4 py-2 rounded-4xl"
+                className="flex gap-2 hover:bg-zinc-700 px-4 py-2 md:rounded-4xl justify-center md:justify-start"
               >
-                <MessageCircleReplyIcon className="shrink-0" /> Messages
+                <MessageCircleReplyIcon className="shrink-0" /> <p className="hidden md:block">Messages</p>
               </Link>
             </li>
           </ul>

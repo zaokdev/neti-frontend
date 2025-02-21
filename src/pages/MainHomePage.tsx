@@ -91,13 +91,13 @@ const MainHomePage = () => {
 
   return (
     <>
-      <div className="md:col-span-8 flex flex-col md:px-10 py-4 px-8 gap-8">
+      <div className="md:col-span-7 flex flex-col md:px-10 py-4 px-8 gap-8">
         <SubmitAPost />
         {posts.map((post: PostType) => (
           <Post post={post} key={post.id} />
         ))}
       </div>
-      <aside className="hidden md:block col-span-2 mt-4">
+      <aside className="hidden md:block col-span-3 mt-4">
         <div className="bg-zinc-800 rounded-xl">
           {/* Sería bueno un endpoint que recopile los posts con más likes en las últimas 24 horas */}
           <h2 className="font-bold text-lg p-3">Trendiest posts</h2>
