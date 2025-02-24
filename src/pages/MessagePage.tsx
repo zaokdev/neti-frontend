@@ -13,9 +13,10 @@ const MessagePage = () => {
       participants: [
         {
           id: 201,
-          name: "María López",
+          name: "pollo_frontend",
           role: "Recruiter",
           companyId: 101,
+          avatar: "hellyea.webp",
         },
         {
           id: 301,
@@ -51,9 +52,10 @@ const MessagePage = () => {
       participants: [
         {
           id: 202,
-          name: "Javier Ramírez",
+          name: "Qiguanchanghong",
           role: "Recruiter",
           companyId: 104,
+          avatar: "https://media.tenor.com/RFLHa8XdOO4AAAAe/cats-rice-hat.png",
         },
         {
           id: 302,
@@ -90,9 +92,10 @@ const MessagePage = () => {
       participants: [
         {
           id: 203,
-          name: "Sofía Herrera",
+          name: "Elhapihapi",
           role: "Recruiter",
           companyId: 106,
+          avatar: "hapihapi.gif",
         },
         {
           id: 302,
@@ -124,7 +127,6 @@ const MessagePage = () => {
       ],
     },
   ];
-  const userId = messagesMock[0].currentUserId;
 
   return (
     <>
@@ -174,19 +176,18 @@ const MessagePage = () => {
             >
               <StepBack />
             </button>
-
-              <form className="flex justify-self-end">
-                <Input
-                  type={""}
-                  id={""}
-                  name={""}
-                  className="rounded-r-none"
-                />
-                <button className="bg-zinc-700 border-l-0 rounded-r-lg pr-2">
-                  <Send />
-                </button>
-              </form>
-            </div>
+            <section className="flex-1 flex items-end justify-end ">
+              <div className="bg-blue-600 hover:bg-blue-500 py-1 px-2 mb-4 rounded-lg">
+                Ola
+              </div>
+            </section>
+            <form className="flex justify-self-end">
+              <Input type={""} id={""} name={""} className="rounded-r-none" />
+              <button className="bg-zinc-700 border-l-0 rounded-r-lg pr-2">
+                <Send />
+              </button>
+            </form>
+          </div>
         </section>
       )}
     </>

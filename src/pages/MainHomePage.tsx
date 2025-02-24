@@ -8,29 +8,31 @@ const MainHomePage = () => {
       id: 1,
       user: {
         id: 101,
-        name: "Carlos Dev",
-        username: "carlitos_dev",
+        name: "pips Dev",
+        username: "pipodev",
         avatar:
           "https://e7.pngegg.com/pngimages/519/752/png-clipart-plants-vs-zombies-2-it-s-about-time-plants-vs-zombies-garden-warfare-2-the-sims-3-supernatural-pea-plant-stem-video-game-thumbnail.png",
       },
-      content: "¿Cuál es su editor de código favorito? Yo uso VS Code. 🔥",
+      content: "¿Cuál es su editor de código favorito? Yo uso VS Code.",
       image:
         "https://i.ytimg.com/vi/H7LwUj2zlhA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCVOiAcbXBVMEbg95JLyLirmkBgOA",
       likes: 120,
       comments: [
         {
           id: 201,
-          user: "marianajs",
-          avatar: "https://i.pinimg.com/736x/4b/71/e6/4b71e6fbdf57aff6b1b56f7acb0ed2ed.jpg",
-          content: "Yo también, pero últimamente estoy probando WebStorm. 😃",
+          user: "diex_flowbite",
+          avatar:
+            "https://external-preview.redd.it/9NQygRkE2FSy-NrjkYO1VPkrBmhK93KGnz8Y3T84HIc.jpg?width=640&crop=smart&auto=webp&s=43d993b867da6c2d146f4472dd24ef10ae2fe461",
+          content: "monster hunter pipo",
           createdAt: "",
         },
         {
           id: 202,
-          user: "pedrobackend",
-          content: "Nano es el verdadero GOAT. 😂",
+          user: "uwubackend",
+          content: "eso q we",
           createdAt: "",
-          avatar: "https://www.thedragonstreasure.com/cdn/shop/products/uwu.png?v=1736781952"
+          avatar:
+            "https://www.thedragonstreasure.com/cdn/shop/products/uwu.png?v=1736781952",
         },
       ],
       createdAt: "2025-02-18T10:00:00Z",
@@ -40,27 +42,28 @@ const MainHomePage = () => {
       user: {
         id: 102,
         name: "Mariana JS",
-        username: "marianajs",
-        avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+        username: "polloinjs",
+        avatar: "hellyea.webp",
       },
-      content:
-        "Hoy aprendí algo nuevo sobre promesas en JavaScript. ¡Es increíble cómo funciona async/await! 🚀",
+      content: "Mi lenguaje favorito de programación es HTML.",
       image: undefined,
       likes: 200,
       comments: [
         {
           id: 203,
-          user: "carlitos_dev",
-          content: "Sí, pero a veces es un dolor manejar errores con try/catch. 😅",
+          user: "full_programación",
+          content: "Está mejor CSS.",
           createdAt: "",
-          avatar: ""
+          avatar:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv05ueLpBFVM3JAmr9D1GDihurYIaUvq2GDA&s",
         },
         {
           id: 204,
           user: "elena_ui",
-          content: "Te recomiendo usar async/await con .catch() en lugar de try/catch. 😉",
+          content: "SQL es el GOAT.",
           createdAt: "",
-          avatar: "https://s4.anilist.co/file/anilistcdn/character/large/b135673-tDh8YDjOzQXj.jpg"
+          avatar:
+            "https://s4.anilist.co/file/anilistcdn/character/large/b135673-tDh8YDjOzQXj.jpg",
         },
       ],
       createdAt: "2025-02-17T12:30:00Z",
@@ -82,9 +85,11 @@ const MainHomePage = () => {
         {
           id: 205,
           user: "juan_devops",
-          content: "Buenísimo, Docker es clave para evitar el clásico 'En mi máquina sí funciona'. 😆",
+          content:
+            "Buenísimo, Docker es clave para evitar el clásico 'En mi máquina sí funciona'. 😆",
           createdAt: "",
-          avatar: "https://previews.123rf.com/images/hobbitfoot/hobbitfoot1911/hobbitfoot191102984/133943914-emoji-de-cara-de-nerd-emoticon-inteligente-con-gafas-friki-o-estudiante-ilustraci%C3%B3n-vectorial.jpg"
+          avatar:
+            "https://previews.123rf.com/images/hobbitfoot/hobbitfoot1911/hobbitfoot191102984/133943914-emoji-de-cara-de-nerd-emoticon-inteligente-con-gafas-friki-o-estudiante-ilustraci%C3%B3n-vectorial.jpg",
         },
       ],
       createdAt: "2025-02-16T18:45:00Z",
@@ -99,12 +104,7 @@ const MainHomePage = () => {
           <Post post={post} key={post.id} />
         ))}
       </div>
-      <aside className="hidden md:block col-span-3 mt-4">
-        <div className="bg-zinc-800 rounded-xl">
-          {/* Sería bueno un endpoint que recopile los posts con más likes en las últimas 24 horas */}
-          <h2 className="font-bold text-lg p-3">Trendiest posts</h2>
-        </div>
-      </aside>
+      <aside className="hidden md:block col-span-3 mt-4"></aside>
     </>
   );
 };

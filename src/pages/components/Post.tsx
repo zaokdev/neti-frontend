@@ -36,7 +36,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
             {post.user.username}
           </h3>
         </div>
-        <p className="mt-2">{post.content}</p>
+        <p className="mt-2 mb-6">{post.content}</p>
         <img src={post.image} alt={post.image} />
         <div className="flex justify-center md:justify-end md:gap-4 gap-16 mt-4">
           <p
@@ -64,7 +64,11 @@ const Post: React.FC<PostProps> = ({ post }) => {
         {post.comments.map((comment) => (
           <div className="mb-4">
             <div className="flex gap-4 items-center mb-2">
-              <img src={comment.avatar} alt={comment.user} className="h-8 rounded-full" />
+              <img
+                src={comment.avatar}
+                alt={comment.user}
+                className="h-8 rounded-full"
+              />
               <h3 className="font-bold">{comment.user}</h3>
             </div>
             <p>{comment.content}</p>
