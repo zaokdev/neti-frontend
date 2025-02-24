@@ -185,7 +185,12 @@ const Jobs = () => {
             <div className="flex gap-3 items-center w-fit sticky top-0">
               <img src={jobInView.company.image} className="w-8 h-8 rounded-full" />
               <span className="text-zinc-400">{jobInView.company.name}</span>
-              <p>{jobInView.contractType}</p>
+              <span>{jobInView.contractType}</span>
+            </div>
+            <p>{jobInView.details}</p>
+            <div>
+            <Button>Apply</Button>
+            <Button style="secundary">Save</Button>
             </div>
         </div>
       </section>}

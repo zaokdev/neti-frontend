@@ -136,7 +136,7 @@ const MessagePage = () => {
             name="message"
             type="text"
             className="h-full"
-            placeholder="Search jobs here..."
+            placeholder="Search messages here..."
           />
           <Button type="submit">Search</Button>
         </form>
@@ -166,7 +166,7 @@ const MessagePage = () => {
       </section>
 
       {currentMessages && (
-        <section className="fixed lg:static inset-0 w-full bottom-1/12 bg-zinc-800 lg:col-span-6 px-4 py-2 h-full z-20">
+        <section className="fixed lg:static inset-0 w-full bottom-1/12 bg-zinc-800 lg:col-span-6 px-4 md:py-2 pb-12 h-full z-20">
           <div className="top-0 sticky flex flex-col h-full justify-between">
             <button
               className="rounded-full p-2 md:p-4 hover:bg-zinc-700 cursor-pointer"

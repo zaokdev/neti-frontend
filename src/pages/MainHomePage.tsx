@@ -93,7 +93,7 @@ const MainHomePage = () => {
 
   return (
     <>
-      <div className="md:col-span-7 flex flex-col md:px-10 py-4 px-8 gap-8">
+      <div className="md:col-span-7 flex flex-col md:px-10 pt-4 pb-12 px-8 gap-8">
         <SubmitAPost />
         {posts.map((post: PostType) => (
           <Post post={post} key={post.id} />
