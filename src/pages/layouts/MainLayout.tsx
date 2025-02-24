@@ -7,9 +7,9 @@ const MainLayout = () => {
     <main className="flex flex-col text-white min-h-screen max-h-fit">
       <NavBar />
       {/* la sidebar uwu */}
-      <section className="bg-zinc-900 flex-1 md:grid-cols-12 md:grid xl:px-32">
-        <div className="fixed w-full md:w-auto md:relative bg-zinc-800 col-span-2 md:flex md:justify-start bottom-0">
-          <ul className="mt-4 flex-1 flex md:flex-col gap-2 md:px-2 h12">
+      <section className="bg-zinc-900 flex-1 md:grid-cols-12 md:grid xl:px-32 z-50">
+        <div className="fixed z-50 w-full md:w-auto md:relative bg-zinc-800 col-span-2 md:flex md:justify-start bottom-0">
+          <ul className="md:mt-4 flex-1 flex md:flex-col gap-2 md:px-2 h12">
             <li className="flex-1 md:flex-none">
               <Link
                 to={"/"}

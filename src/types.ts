@@ -12,6 +12,7 @@ export type PostType = {
     comments: {
         id: number;
         user: string;
+        avatar: string;
         content: string;
         createdAt: string;
     }[];

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { PostType } from "../../types";
-import { MessageCircle, Share2, ThumbsUp } from "lucide-react";
+import { MessageCircle, Send, Share2, ThumbsUp } from "lucide-react";
 import Modal from "./Modal";
 import { useNavigate } from "react-router";
+import Input from "./Input";
 
 interface PostProps {
   post: PostType;
 }
 
 const Post: React.FC<PostProps> = ({ post }) => {
-  
   const [yourLike, setYourLike] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
             className="flex flex-col items-center cursor-pointer"
           >
             {/* Me va a dar algo con typescript */}
-            <ThumbsUp className={yourLike && "text-blue-600"} />{" "}
+            <ThumbsUp className={yourLike ? "text-blue-600" : ""} />{" "}
             {yourLike ? post.likes + 1 : post.likes}
           </p>
           <p
@@ -61,9 +61,22 @@ const Post: React.FC<PostProps> = ({ post }) => {
 
       {/* MODAL PARA LOS COMENTARIOS */}
       <Modal show={showModal} onClose={() => setShowModal(!showModal)}>
-        {post.comments.map((comment: any) => (
-          <div>{comment.avatar}</div>
+        {post.comments.map((comment) => (
+          <div className="mb-4">
+            <div className="flex gap-4 items-center mb-2">
+              <img src={comment.avatar} alt={comment.user} className="h-8 rounded-full" />
+              <h3 className="font-bold">{comment.user}</h3>
+            </div>
+            <p>{comment.content}</p>
+            <span className="text-zinc-400 text-sm">{comment.createdAt}</span>
+          </div>
         ))}
+        <form className="flex bg-zinc-700 pr-2">
+          <Input type={""} id={""} name={""} />
+          <button type="submit" className="cursor-pointer">
+            <Send />
+          </button>
+        </form>
       </Modal>
     </>
   );

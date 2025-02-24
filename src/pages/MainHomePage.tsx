@@ -21,6 +21,7 @@ const MainHomePage = () => {
         {
           id: 201,
           user: "marianajs",
+          avatar: "https://i.pinimg.com/736x/4b/71/e6/4b71e6fbdf57aff6b1b56f7acb0ed2ed.jpg",
           content: "Yo también, pero últimamente estoy probando WebStorm. 😃",
           createdAt: "",
         },
@@ -29,6 +30,7 @@ const MainHomePage = () => {
           user: "pedrobackend",
           content: "Nano es el verdadero GOAT. 😂",
           createdAt: "",
+          avatar: "https://www.thedragonstreasure.com/cdn/shop/products/uwu.png?v=1736781952"
         },
       ],
       createdAt: "2025-02-18T10:00:00Z",
@@ -49,16 +51,16 @@ const MainHomePage = () => {
         {
           id: 203,
           user: "carlitos_dev",
-          content:
-            "Sí, pero a veces es un dolor manejar errores con try/catch. 😅",
+          content: "Sí, pero a veces es un dolor manejar errores con try/catch. 😅",
           createdAt: "",
+          avatar: ""
         },
         {
           id: 204,
           user: "elena_ui",
-          content:
-            "Te recomiendo usar async/await con .catch() en lugar de try/catch. 😉",
+          content: "Te recomiendo usar async/await con .catch() en lugar de try/catch. 😉",
           createdAt: "",
+          avatar: "https://s4.anilist.co/file/anilistcdn/character/large/b135673-tDh8YDjOzQXj.jpg"
         },
       ],
       createdAt: "2025-02-17T12:30:00Z",
@@ -80,9 +82,9 @@ const MainHomePage = () => {
         {
           id: 205,
           user: "juan_devops",
-          content:
-            "Buenísimo, Docker es clave para evitar el clásico 'En mi máquina sí funciona'. 😆",
+          content: "Buenísimo, Docker es clave para evitar el clásico 'En mi máquina sí funciona'. 😆",
           createdAt: "",
+          avatar: "https://previews.123rf.com/images/hobbitfoot/hobbitfoot1911/hobbitfoot191102984/133943914-emoji-de-cara-de-nerd-emoticon-inteligente-con-gafas-friki-o-estudiante-ilustraci%C3%B3n-vectorial.jpg"
         },
       ],
       createdAt: "2025-02-16T18:45:00Z",
