@@ -1,6 +1,7 @@
 import NavBar from "./layouts/NavBar";
 import Input from "./components/Input";
 import { Link, useNavigate } from "react-router";
+import "../styles/styles.css"
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -8,7 +9,7 @@ const SignIn = () => {
     <section className="text-white h-screen flex flex-col">
       <NavBar />
       <section className="md:grid md:grid-cols-12 md:gap-16 bg-zinc-900 md:py-8 md:px-12 px-8 flex-155">
-        <div className="md:col-span-7 bg-zinc-800 rounded-xl hidden md:block"></div>
+        <div id="gatopan" className="md:col-span-7 bg-zinc-800 rounded-xl hidden md:block"></div>
         <div className="md:col-span-5">
           {/* EMPIEZA EL FORMULARIO */}
           <form

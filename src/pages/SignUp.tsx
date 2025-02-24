@@ -2,14 +2,17 @@ import React from "react";
 import NavBar from "./layouts/NavBar";
 import Input from "./components/Input";
 import { Link } from "react-router";
+import "../styles/styles.css"
 
 const SignUp = () => {
   return (
-    <section className="text-white">
+    <section className="text-white h-screen flex flex-col">
       <NavBar />
       {/*GRID DE 8/4 */}
       <section className="md:grid md:grid-cols-12 md:gap-16 bg-zinc-900 min-h-screen md:py-8 md:px-12">
-        <div className="md:col-span-7 bg-zinc-800 rounded-xl hidden md:block"></div>
+        <div id="hapihapi" className="md:col-span-7 bg-zinc-800 rounded-xl hidden md:block">
+          
+        </div>
         <div className="md:col-span-5">
           {/* EMPIEZA EL FORMULARIO */}
           <form className="rounded-lg shadow-lg h-full flex flex-col md:justify-evenly">
